@@ -37,12 +37,12 @@ namespace SubirArchivos.Controllers
 
             using (Stream fileStream1 = new FileStream(Path.Combine(RutaSitio + "/Files/arhivo1.png"), FileMode.Create))
             {
-                model.Archivo1.CopyToAsync(fileStream1);
+                model.Archivo1.CopyTo(fileStream1);
             }
 
             using (Stream fileStream2 = new FileStream(Path.Combine(RutaSitio + "/Files/arhivo2.png"), FileMode.Create))
             {
-                model.Archivo2.CopyToAsync(fileStream2);
+                model.Archivo2.CopyTo(fileStream2);
             }
 
 
